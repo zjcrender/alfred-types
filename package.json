@@ -1,0 +1,27 @@
+{
+  "name": "alfred-types",
+  "version": "0.0.1",
+  "description": "Alfred workflow scriptFilter types",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zjcrender/alfred-types.git"
+  },
+  "keywords": [
+    "alfred",
+    "workflow",
+    "script",
+    "filter",
+    "scriptfilter",
+    "types"
+  ],
+  "author": "render",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/zjcrender/alfred-types/issues"
+  },
+  "homepage": "https://github.com/zjcrender/alfred-types#readme"
+}
