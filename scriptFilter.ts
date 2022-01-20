@@ -3,10 +3,10 @@
  * you can use an object with typed keys as follows:
  * */
 export interface ScriptFilterItemAction  {
-  text: string[];
-  url: string;
-  file: string;
-  auto: string;
+  text?: string[];
+  url?: string;
+  file?: string;
+  auto?: string;
 }
 
 export type HotKeys = 'fn' | 'ctrl' | 'opt' | 'cmd' | 'shift';
@@ -17,8 +17,8 @@ export type HotKeys = 'fn' | 'ctrl' | 'opt' | 'cmd' | 'shift';
  * Finally, by using "type": "filetype", you can get the icon of a specific file,
  * for example "path": "public.png"
  * */
-interface IconConf {
-  path?: string;
+interface FilterItemIcon {
+  path: string;
   type?: 'fileicon' | 'filetype';
 }
 
@@ -59,7 +59,7 @@ export interface ScriptFilterItem {
    * The icon displayed in the result row. Workflows are run from their workflow folder,
    * so you can reference icons stored in your workflow relatively.
    * */
-  icon?: string | IconConf;
+  icon?: FilterItemIcon;
 
   /**
    * default = true
