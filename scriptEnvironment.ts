@@ -76,7 +76,7 @@ type EnvWithBundleid = BasicEnv & {
   /**
    * The bundle ID of the current running workflow
    * */
-  alfred_workflow_bundleid?: string;
+  alfred_workflow_bundleid: string;
 
   /**
    * These are the recommended locations for volatile and non-volatile workflow data:
@@ -86,8 +86,8 @@ type EnvWithBundleid = BasicEnv & {
    *
    * Note that these two will only be populated if your workflow has a bundle id set.
    * */
-  alfred_workflow_cache?: string;
-  alfred_workflow_data?: string;
+  alfred_workflow_cache: string;
+  alfred_workflow_data: string;
 }
 
 /**
