@@ -110,7 +110,7 @@ export interface ScriptFilterItem {
    * valid attribute to mark if the result is valid based on the modifier selection and set a
    * different arg to be passed out if actioned with the modifier.
    * */
-  mods?: Partial<Record<HotKeys, Omit<ScriptFilterItem, 'mods'>>>;
+  mods?: Partial<Record<HotKeys, Partial<Omit<ScriptFilterItem, 'mods'>>>>;
 
   /**
    * This element defines the Universal Action items used when actioning the result,
